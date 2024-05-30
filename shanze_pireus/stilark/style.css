@@ -1,0 +1,182 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+    color: #2c3e50;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header and Footer */
+header, footer {
+    background-color: #1f3b4d;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+.header-title {
+    font-size: 2.5rem;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    background-color: #1a5276;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover {
+    background-color: #5499c7;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Quiz Container */
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#quiz-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#quiz-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Buttons */
+button {
+    background-color: #1f3b4d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #5499c7;
+}
+
+/* Results */
+.result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1f3b4d;
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="date"],
+input[type="number"],
+input[type="text"],
+input[type="email"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Images */
+img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
+
+/* Intro Section */
+.intro {
+    background-color: #e6f0f8;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.intro p {
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #1f3b4d;
+}
+
+.intro a {
+    color: #1a5276;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.intro a:hover {
+    text-decoration: underline;
+}
+
+/* Map Container */
+.map-container {
+    width: 100%;
+    height: 500px;
+    margin: 20px 0;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+}

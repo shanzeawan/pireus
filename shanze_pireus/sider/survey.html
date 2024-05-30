@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stilark/style.css">
+    <script src="../skript/include.js" defer></script>
+    <title>Pireus Quiz</title>
+</head>
+
+<body>
+    <div data-include="../includes/header.html"></div>
+    <main class="main-content">
+        <div class="survey-container">
+            <h1>Spørreundersøkelse om Pireus</h1>
+            <form id="undersokelse-skjema">
+                <div class="question">
+                    <label for="spm1">1. Hva er din favorittdel av Pireus?</label><br>
+                    <input type="text" id="spm1" name="spm1" required>
+                </div>
+                <div class="question">
+                    <label for="spm2">2. Hvor mange ganger har du besøkt Pireus?</label><br>
+                    <input type="number" id="spm2" name="spm2" required>
+                </div>
+                <div class="question">
+                    <label for="spm3">3. Vil du anbefale Pireus til andre?</label><br>
+                    <input type="radio" id="spm3_ja" name="spm3" value="Ja" required>
+                    <label for="spm3_ja">Ja</label>
+                    <input type="radio" id="spm3_nei" name="spm3" value="Nei" required>
+                    <label for="spm3_nei">Nei</label>
+                </div>
+                <button type="submit">Send inn</button>
+            </form>
+            <div id="undersokelse-resultat" class="hidden">
+                <h2>Resultat av undersøkelsen</h2>
+                <pre id="resultat-utdata"></pre>
+            </div>
+        </div>
+    </main>
+    <div data-include="../includes/footer.html"></div>
+    <script src="../skript/survey.js" defer></script>
+</body>
+
+</html>
